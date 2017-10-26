@@ -61,3 +61,7 @@ export LANGUAGE=en_US.UTF-8
 
 # add thefuck
 eval $(thefuck --alias)
+
+# git customization per user
+git config --global user.name "$USER@$HOSTNAME"
+git config --global user.email "$USER@$(hostname -f)"
